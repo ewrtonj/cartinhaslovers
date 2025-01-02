@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Tempo Juntos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        function criarPontos() {
+            const numPontos = 100;
+            for (let i = 0; i < numPontos; i++) {
+                const ponto = document.createElement('div');
+                ponto.className = 'ponto';
+                ponto.style.top = `${Math.random() * 100}vh`;
+                ponto.style.left = `${Math.random() * 100}vw`;
+                ponto.style.animationDuration = `${Math.random() * 2 + 1}s`;
+                document.body.appendChild(ponto);
+            }
+        }
+        criarPontos();
+    </script>
+
+    <!-- Container para agrupar e centralizar os elementos -->
+    <div class="container">
+        <!-- Mensagem na parte superior com apenas o nome do casal -->
+        <div class="mensagem">
+            <h1>Everton & Hiayssa</h1> <!-- Alterado para o nome do casal -->
+        </div>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <img src="imagens/foto1.jpg" class="slide ativo" alt="Foto 1">
+            <img src="imagens/foto2.jpg" class="slide" alt="Foto 2">
+        </div>
+
+        <!-- Título do cronômetro -->
+        <div class="relogio">
+            <h2>Tempo Juntos</h2>
+            <p id="contador">
+                <span class="dias">0</span> dias, 
+                <span class="horas">0</span> horas, 
+                <span class="minutos">0</span> minutos e 
+                <span class="segundos">0</span> segundos
+            </p>
+        </div>
+
+        <!-- Linha vermelha abaixo do cronômetro -->
+        <div class="linha-vermelha"></div>
+
+        <!-- Frase abaixo da linha vermelha -->
+        <div class="mensagem-final">
+            <p>Você é minha luz, minha força, minha vida. <br> Eu posso ver seu halo, você sabe que é minha salva de palmas.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
