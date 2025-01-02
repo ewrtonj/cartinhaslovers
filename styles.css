@@ -110,7 +110,7 @@ body::before {
 @media (max-width: 768px) {
     /* Tornando o slideshow mais responsivo */
     .slideshow {
-        width: 100%;
+        width: 70%;
         height: 50vh; /* Ajuste da altura do slideshow */
     }
 
