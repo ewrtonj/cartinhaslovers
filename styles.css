@@ -1,8 +1,8 @@
 /* Estilos gerais do body */
 body {
     font-family: Arial, sans-serif;
-    background-color: black; /* Fundo preto simples */
-    color: white; /* Letras brancas */
+    background-color: black; !important;/* Fundo preto simples */
+    color: white !important; /* Letras brancas */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -128,4 +128,14 @@ body::before {
     .mensagem-final p {
         font-size: 1em; /* Ajuste do tamanho da fonte */
     }
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
 }
