@@ -1,7 +1,7 @@
 /* Estilos gerais do body */
 body {
     font-family: Arial, sans-serif;
-    background-color: black; !important;/* Fundo preto simples */
+    background-color: black !important; /* Fundo preto simples */
     color: white !important; /* Letras brancas */
     display: flex;
     flex-direction: column;
@@ -82,6 +82,7 @@ body::before {
 
 .relogio p {
     color: white; /* Cor branca para as frases do cronômetro */
+    word-wrap: break-word; /* Quebra palavras longas */
 }
 
 /* Estilo para a linha vermelha abaixo do cronômetro */
@@ -98,6 +99,8 @@ body::before {
 .mensagem-final {
     text-align: center;  /* Centraliza o texto */
     margin-top: 10px;    /* Espaço acima da frase */
+    overflow-y: auto;    /* Permite rolagem vertical */
+    max-height: 150px;   /* Altura máxima */
 }
 
 .mensagem-final p {
@@ -128,6 +131,8 @@ body::before {
     .mensagem-final p {
         font-size: 1em; /* Ajuste do tamanho da fonte */
     }
+}
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -137,5 +142,4 @@ body::before {
 
 html, body {
     height: 100%;
-}
 }
